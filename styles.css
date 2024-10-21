@@ -1,0 +1,166 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.book-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.book-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #7d4cdb;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 35px;
+    height: 20px;
+}
+
+.icons-bulim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 200px;
+}
+
+.icons-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    gap: 10px;
+}
+
+.icons-text p {
+    opacity: 0;
+    position: absolute;
+    width: 120px;
+    right: 40px;
+}
+
+.book-image:hover .icons button {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.icons button:hover ~  p {
+    opacity: 1;
+    transition: 0.5s; 
+}
+
+.icons button:hover {
+    color: #5768ff;
+    background: white;
+    border:1px solid  #5768ff;
+}
+
+.icons button {
+    opacity: 0;
+    background-color: #f3f4f6;
+    border: 0px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: #5768ff;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+.malumot {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #f8b400;
+    margin-bottom: 10px;
+}
+
+.narx {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    background-color: #5768ff;
+    color: #fff;
+    transform: translateY(30px);
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 75%;
+    font-size: 18px;
+}
+
+.add-button i {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.add-button:hover {
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
